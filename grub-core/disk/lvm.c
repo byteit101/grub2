@@ -823,6 +823,8 @@ grub_lvm_detect (grub_disk_t disk,
 		   */
 		  else if (grub_strncmp (p, "cache\"",
 				   sizeof ("cache\"") - 1) == 0
+				   || grub_strncmp (p, "cache+CACHE_USES_CACHEVOL\"",
+				   sizeof ("cache+CACHE_USES_CACHEVOL\"") - 1) == 0
 				   || grub_strncmp (p, "integrity\"",
 				   sizeof ("integrity\"") - 1) == 0)
 		    {
